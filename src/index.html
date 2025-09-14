@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="bg">
+    <head>
+        <meta property="og:title" content="Ателието на Ани - Шивашки услуги и поправки">
+        <meta property="og:description" content="Професионално ателие за шивашки услуги. Индивидуални костюми, рокли и поправки.">
+        <meta property="og:image" content="https://example.com/images/tailor-shop.jpg">
+        <meta property="og:type" content="business.business">
+        <meta property="og:locale" content="bg_BG">
+        <meta property="og:url" content="https://example.com">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forum Posts – Example Page</title>
+        <meta name="description" content="Professional tailor offering custom clothing, alterations, and unique designs. Visit us for quality craftsmanship and see what customers are saying.">
+        
+        <!-- REVIEW_SCHEMA_PLACEHOLDER -->
+
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Do you offer same-day alterations?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we provide same-day alterations for most garments. Please call ahead to confirm."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What payment methods do you accept?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We accept cash, credit cards, and mobile payments."
+                  }
+                }
+              ]
+            }
+        </script>
+
+    </head>
+    <body>
+        <header id="header">
+          <div><img src="" alt="Пиктограма, изобразяваща слушалка на телефон"> тел.: 23423423424</div>
+          <div><img src="" alt="Пиктограма, изобразяваща часовник">Понеделник - Петък: 09:00 - 18:00; Събота: 10:00 - 14:00</div>
+          <div><img src="" alt="Пиктограма, изобразяваща местоположение">Русе, ул. АСсд</div>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="#logoSection">Начало</a></li>
+            <li><a href="#aboutSection">За ателието</a></li>
+            <li><a href="#reviewSection">Отзиви от клиенти</a></li>
+            <li><a href="#priceListSection">Ценоразпис</a></li>
+            <li><a href="#gallerySection">Галерия</a></li>
+            <li><a href="#qnaSection">Често задавани въпроси</a></li>
+            <li><a href="#contactsSection">Контакти</a></li>
+          </ul>
+        </nav>
+        <main> 
+            <section id="logoSection">
+              <h1 id="hiddenTitle">
+                <img src="" alt="Ателието на Ани - ">
+              </h1>
+            </section>
+
+            <section id="aboutSection">
+                <h2 class="sectionTitle">За ателието</h2>
+                <p class="sectionText">
+
+                </p>
+            </section>
+
+            <section id="reviewSection" aria-la>
+                <h2 class="sectionTitle">Отзиви от клиенти</h2>
+
+            </section>
+
+            <template id="reviewTemplate">
+                <article class="review">
+                  <footer>
+                    <address><a href="">Link to the review source</a></address>
+                    <img class="userImage" src="" alt="Профилната снимка, в facebook, на потребителя, който е публикувал този коментар.">
+                    <h3 class="userName"></h3>
+                    <time class="reviewPublicationDate" datetime="2025-09-09">Sep 9, 2025</time>
+                  </footer>
+                    <div>
+                        <p class="reviewText"></p>
+                    </div>
+                </article>
+            </template>
+
+            <section id="priceListSection" aria-la>
+                <h2 class="sectionTitle">Ценоразпис</h2>
+
+            </section>
+
+            <section id="gallerySection">
+                <h2 class="sectionTitle">Галерия</h2>
+            </section>
+
+            <template id="galleryTemplate">
+                <div>
+                    <img class="galleryImage" src="" alt="">
+                    <h3 class="galleryText"></h3>
+                </div>
+            </template>
+
+            <section id="qnaSection">
+              <h2 class="sectionTitle">Често задавани въпроси</h2>
+             <!--Not yet sure how the qna will look, so its empty for now-->
+            </section>
+
+            <section id="contactsSection">
+              <h2 class="sectionTitle">Контакти</h2>
+              <div>
+                <div id="workTimeSection">
+                  <h3>Работно време:</h3>
+                  <ul>
+                    <li>
+                      <strong>Понеделник - Петък:</strong> 
+                      09:00 - 18:00 ч.
+                    </li>
+                    <li>
+                      <strong>Събота:</strong> 
+                      10:00 - 14:00 ч.
+                    </li>
+                    <li>
+                      <strong>Неделя:</strong> 
+                      Почивен ден
+                    </li>
+                    <li>
+                      <strong>Телефон за контакт:</strong> 
+                       324123425143
+                    </li>
+                    <li>
+                      <strong>E-mail:</strong> 
+                      test@test.com
+                    </li>
+                     <li>
+                      <strong>Адрес:</strong> 
+                      test асдваед
+                    </li>
+                  </ul>
+                </div>
+
+                <form>
+                  <label for="names">Име и Фамилия *</label>
+                  <input id="names" name="names" type="text" required>
+
+                  <label for="email">E-mail *</label>
+                  <input id="email" name="email" type="email" required>
+
+                  <label for="about">Относно *</label>
+                  <input id="about" name="about" type="text" required maxlength="25">
+
+                  <label for="message">Съобщение *</label>
+                  <textarea id="message" name="message" required minlength="10"></textarea>
+                                  
+                  <button type="submit">Изпрати</button>
+                </form>
+              </div>
+            </section>
+            <section id="map">
+              <figure>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d394.91324048673476!2d25.97356095234707!3d43.86000165541771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ae6778debbf029%3A0xf2f5f706b22573a0!2z0KjQuNCy0LDRiNC60Lgg0YPRgdC70YPQs9C4ICLQkNGC0LXQu9C40LXRgtC-INC90LAg0JDQvdC4Ig!5e1!3m2!1sbg!2sbg!4v1757491206477!5m2!1sbg!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <figcaption>Намерете ни на адрес "Русе кусе мусе"</figcaption>
+              </figure>
+            </section>
+        </main>
+    </body>
+</html>
