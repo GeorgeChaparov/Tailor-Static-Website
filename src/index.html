@@ -11,40 +11,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Forum Posts – Example Page</title>
         <meta name="description" content="Professional tailor offering custom clothing, alterations, and unique designs. Visit us for quality craftsmanship and see what customers are saying.">
-        
+        <link rel="stylesheet" href="style.css">
+
+
         <!-- REVIEW_SCHEMA_PLACEHOLDER -->
 
-        <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "Do you offer same-day alterations?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, we provide same-day alterations for most garments. Please call ahead to confirm."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "What payment methods do you accept?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We accept cash, credit cards, and mobile payments."
-                  }
-                }
-              ]
-            }
-        </script>
+        <!-- QnA_SCHEMA_PLACEHOLDER -->
 
     </head>
     <body>
+
+
+        <svg width="73" height="45" viewBox="0 0 73 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.5 41.36H69.08" stroke="#6079BA" stroke-width="7" stroke-miterlimit="10" stroke-linecap="round"/>
+          <path d="M3.5 22.48H69.08" stroke="#6079BA" stroke-width="7" stroke-miterlimit="10" stroke-linecap="round"/>
+          <path d="M3.5 3.5H69.08" stroke="#6079BA" stroke-width="7" stroke-miterlimit="10" stroke-linecap="round"/>
+        </svg>
+
         <header id="header">
-          <div><img src="" alt="Пиктограма, изобразяваща слушалка на телефон"> тел.: 23423423424</div>
-          <div><img src="" alt="Пиктограма, изобразяваща часовник">Понеделник - Петък: 09:00 - 18:00; Събота: 10:00 - 14:00</div>
-          <div><img src="" alt="Пиктограма, изобразяваща местоположение">Русе, ул. АСсд</div>
+          <nav><a href="#aboutSection"></a></nav>
+          <div>ШИВАШКИ УСЛУГИ</div>
+          <nav>
+            <a href="#priceListSection"></a>
+            <a href="#contactsSection"></a>
+          </nav>
         </header>
         <nav>
           <ul>
@@ -57,58 +47,119 @@
             <li><a href="#contactsSection">Контакти</a></li>
           </ul>
         </nav>
-        <main> 
+
+        <main class="wrapper"> 
             <section id="logoSection">
               <h1 id="hiddenTitle">
-                <img src="" alt="Ателието на Ани - ">
+                <img src="" alt="Ателието на Ани - Подгъвки | Преправяне на дрехи | Смяна на цип | Изработка на чанти">
+
               </h1>
             </section>
 
             <section id="aboutSection">
-                <h2 class="sectionTitle">За ателието</h2>
-                <p class="sectionText">
-
-                </p>
+              <h2 class="sectionTitle">За ателието</h2>
+              <p class="sectionText">Здравейте! Аз съм Ани. Предлагам множество шивашки услуги, включително разширяване и свиване на дрехи, поставяне на копчета, смяна хастар джоб и много други. </p>
+              
+              <div>
+                <img src="" alt="Снимка на собственика - Анка Ангелова">
+                <img src="" alt="Снимка на ателието">
+              </div>
+              
+              <p>Освен това при мен можете да откриете уникални модели чанти, тъй като сама си ги създавам. При желание можете да си поръчате ушиване на чанта по поръчка.</p>
+              <p>Можете да ме откриете на адрес: <a href="">ж.к. Възраждане, ул. „Доростол“ 73, 7002 Русе</a></p>
             </section>
 
             <section id="reviewSection" aria-la>
-                <h2 class="sectionTitle">Отзиви от клиенти</h2>
-
+              <h2 class="sectionTitle">ОТЗИВИ ОТ КЛИЕНТИ</h2>
+              <!-- REVIEWS_PLACEHOLDER -->
             </section>
 
-            <template id="reviewTemplate">
-                <article class="review">
-                  <footer>
-                    <address><a href="">Link to the review source</a></address>
-                    <img class="userImage" src="" alt="Профилната снимка, в facebook, на потребителя, който е публикувал този коментар.">
-                    <h3 class="userName"></h3>
-                    <time class="reviewPublicationDate" datetime="2025-09-09">Sep 9, 2025</time>
-                  </footer>
-                    <div>
-                        <p class="reviewText"></p>
-                    </div>
-                </article>
-            </template>
-
             <section id="priceListSection" aria-la>
-                <h2 class="sectionTitle">Ценоразпис</h2>
+              <h2 class="sectionTitle">Ценоразпис</h2>
 
+              <p>Срок за изпълнение от 3 до 5 работни дни. За бърза поръчка в рамките на 24 часа, цената се повишава + 50%.</p>
+
+              <label for="priceList_1">Подгъвки</label>
+              <input type="checkbox" id="priceList_1" hidden checked>
+              <section>
+                <div>Пола, Панталон<span>10 лв / 5.11 евро</span></div>
+                <div>ОРИГИНАЛЕН ДЪНКИ<span>12 лв / 6.14 евро</span></div>
+                <div>Пола с хастар<span>15 лв / 7.67 евро</span></div>
+                <div>Блуза<span>10 лв / 5.11 евро</span></div>
+                <div>Суитшър<span>14 лв / 7.16 евро</span></div>
+                <div>Сако с хастар, Яке<span>18 лв / 9.20 евро</span></div>
+                <div>Сако с хастар и цип<span>20 лв / 10.23 евро</span></div>
+              </section>
+
+              <label for="priceList_2">Смяна цип</label>
+              <input type="checkbox" id="priceList_2" hidden >
+              <section>
+                <div>Пола, Панталон<span>10 лв / 5.11 евро</span></div>
+                <div>Суитшър<span>18 лв / 9.20 евро</span></div>
+                <div>Дънки<span>12 лв / 6.14 евро</span></div>
+                <div>Пола с хастар<span>14 лв / 7.16 евро</span></div>
+                <div>Яке с хастар<span>24 лв / 12.27 евро</span></div>
+                <div>Палто, Шуба<span>28 лв / 14.32 евро</span></div>
+                <div>Джоб яке<span>12 лв / 6.14 евро</span></div>
+              </section>
+
+              <label for="priceList_3">Скъсяване ръкави</label>
+              <input type="checkbox" id="priceList_3" hidden>
+              <section>
+                <div>Блуза<span>10 лв / 5.11 евро</span></div>
+                <div>Риза с маншети<span>12 лв / 6.14 евро</span></div>
+                <div>Сако с хастар<span>14 лв / 7.16 евро</span></div>
+                <div>Сако с хастар и шлиц<span>16 лв / 8.18 евро</span></div>
+              </section>
+
+              <label for="priceList_4">Стесняване / Отпускане</label>
+              <input type="checkbox" id="priceList_4" hidden>
+              <section>
+                <div>Пола, Рокля<span>13 лв / 6.65 евро</span></div>
+                <div>Панталони странични<span></span></div>
+                <div>Шевове + колан<span>15 лв / 7.67 евро</span></div>
+                <div>Панталони вътрешни<span></span></div>
+                <div>Шевове + странични<span></span></div>
+                <div>Шевове + колан<span>20 лв / 10.23 евро</span></div>
+                <div>Риза, Блуза<span>15 лв / 7.67 евро</span></div>
+                <div>Сако, Яке с хастар<span>28 лв / 14.32 евро</span></div>
+                <div>Палто<span>30 лв / 15.32 евро</span></div>
+              </section>
+
+              <label for="priceList_5">Други</label>
+              <input type="checkbox" id="priceList_5" hidden>
+              <section>
+                <div>Смяна хастар джоб<span>6 лв / 3.07 евро</span></div>
+                <div>Реприз (кърпеж)<span>10 лв / 5.11 евро</span></div>
+                <div>Поставяне копче дънки<span>3.50 лв / 1.79 евро</span></div>
+                <div>Поставяне тик-так<span>3.50 лв / 1.79 евро</span></div>
+                <div>Пико л./м.<span>3 лв / 1.53 евро</span></div>
+                <div>Оверлог л./м.<span>3 лв / 1.53 евро</span></div>
+                <div>Прав шев л./м.<span>3 лв / 1.53 евро</span></div>
+                <div>Смяна плъзгач цип<span>3 лв / 1.53 евро</span></div>
+                <div>Перде 1/м.<span>7 лв / 3.58 евро</span></div>
+              </section>
             </section>
 
             <section id="gallerySection">
-                <h2 class="sectionTitle">Галерия</h2>
+              <h2 class="sectionTitle">Изработка на чанти</h2>
             </section>
 
             <template id="galleryTemplate">
-                <div>
-                    <img class="galleryImage" src="" alt="">
-                    <h3 class="galleryText"></h3>
-                </div>
+              <div>
+                  <img class="galleryImage" src="" alt="">
+                  <h3 class="galleryText"></h3>
+              </div>
             </template>
 
             <section id="qnaSection">
               <h2 class="sectionTitle">Често задавани въпроси</h2>
-             <!--Not yet sure how the qna will look, so its empty for now-->
+
+              <input type="checkbox" id="qna_1" hidden>
+              <section>
+                <label for="qna_1">Какво е предимството на Вашите шивашки услуги пред конкуренти в сферата?</label>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae augue at neque pharetra varius vitae id augue. Proin nec sapien ac risus molestie accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut lacinia pharetra tellus, et porttitor turpis facilisis sit amet. Suspendisse congue felis orci, facilisis aliquam tellus ultricies et. </p>
+              </section>
             </section>
 
             <section id="contactsSection">

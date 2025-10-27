@@ -1,0 +1,21 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+    background-color: black;
+    
+    min-height: 100vh;
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1280px;
+    height: 100%;
+
+    background-color: white;
+}
