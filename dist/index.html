@@ -11,9 +11,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Forum Posts – Example Page</title>
         <meta name="description" content="Professional tailor offering custom clothing, alterations, and unique designs. Visit us for quality craftsmanship and see what customers are saying.">
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+
+
         
-        <script type="application/ld+json">
-    {
+<script type="application/ld+json">
+  {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Ателието на Ани",
@@ -23,15 +30,15 @@
   "email": "info@eleganttailor.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "123 Main Street",
-    "addressLocality": "Your City",
-    "postalCode": "12345",
+    "streetAddress": "ж.к. Възраждане, ул. „Доростол“ 73",
+    "addressLocality": "Ruse",
+    "postalCode": "7002",
     "addressCountry": "BG"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "43.8356",
-    "longitude": "25.9657"
+    "latitude": "43.8601081",
+    "longitude": "25.9738515"
   },
   "openingHours": "Mo-Fr 09:00-18:00",
   "url": "https://example.com",
@@ -61,8 +68,9 @@
 }
 </script>
 
-        <script type="application/ld+json">
-    {
+        
+<script type="application/ld+json">
+  {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
@@ -88,39 +96,72 @@
 
     </head>
     <body>
+
+      <div class="wrapper">
         <header id="header">
-          <div><img src="" alt="Пиктограма, изобразяваща слушалка на телефон"> тел.: 23423423424</div>
-          <div><img src="" alt="Пиктограма, изобразяваща часовник">Понеделник - Петък: 09:00 - 18:00; Събота: 10:00 - 14:00</div>
-          <div><img src="" alt="Пиктограма, изобразяваща местоположение">Русе, ул. АСсд</div>
-        </header>
+        <nav><a href="#aboutSection">За ателието</a></nav>
+        <div>ШИВАШКИ УСЛУГИ</div>
         <nav>
-          <ul>
-            <li><a href="#logoSection">Начало</a></li>
-            <li><a href="#aboutSection">За ателието</a></li>
-            <li><a href="#reviewSection">Отзиви от клиенти</a></li>
-            <li><a href="#priceListSection">Ценоразпис</a></li>
-            <li><a href="#gallerySection">Галерия</a></li>
-            <li><a href="#qnaSection">Често задавани въпроси</a></li>
-            <li><a href="#contactsSection">Контакти</a></li>
-          </ul>
+          <a href="#priceListSection">Ценоразпис</a>
+          <a href="#contactsSection">Контакти</a>
         </nav>
-        <main> 
-            <section id="logoSection">
-              <h1 id="hiddenTitle">
-                <img src="" alt="Ателието на Ани - ">
-              </h1>
-            </section>
 
-            <section id="aboutSection">
-                <h2 class="sectionTitle">За ателието</h2>
-                <p class="sectionText">
+        <menu>
+          <label for="menu-input">
+            <svg width="73" height="45" viewBox="0 0 73 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.5 41.36H69.08" stroke="#6079BA" stroke-width="7" stroke-miterlimit="10" stroke-linecap="round"/>
+              <path d="M3.5 22.48H69.08" stroke="#6079BA" stroke-width="7" stroke-miterlimit="10" stroke-linecap="round"/>
+              <path d="M3.5 3.5H69.08" stroke="#6079BA" stroke-width="7" stroke-miterlimit="10" stroke-linecap="round"/>
+            </svg>
+          </label>
+          <input type="checkbox" id="menu-input" hidden>
+          <nav>
+            <ul>
+              <li><a href="#logoSection">Начало</a></li>
+              <li><a href="#aboutSection">За ателието</a></li>
+              <li><a href="#reviewSection">Отзиви от клиенти</a></li>
+              <li><a href="#priceListSection">Ценоразпис</a></li>
+              <li><a href="#gallerySection">Галерия</a></li>
+              <li><a href="#qnaSection">Често задавани въпроси</a></li>
+              <li><a href="#contactsSection">Контакти</a></li>
+            </ul>
+          </nav>
+        </menu>
+      </header>
+        
+      <main> 
+        <svg id="top-most-SVG-line" width="595" height="226" viewBox="0 0 595 226" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.8" clip-path="url(#clip0_1_20)">
+              <path d="M154.666 123.812C155.185 123.221 155.574 122.527 155.808 121.775C156.041 121.023 156.114 120.231 156.021 119.449C156.021 118.04 155.777 116.74 155.614 115.222C155.37 112.512 154.937 109.586 154.53 106.794C153.638 101.177 152.435 95.6131 150.925 90.129C147.913 79.0865 143.417 68.5031 137.561 58.6679C125.563 38.789 107.864 22.9748 86.7613 13.2782C65.6959 3.69835 42.6889 -0.847681 19.5618 1.56462e-07C-3.46547 0.673075 -26.1755 5.54967 -47.448 14.3892C-58.1022 18.739 -68.3447 24.0354 -78.0523 30.2146C-87.6484 36.5014 -96.621 43.1947 -105.756 49.6441C-123.763 62.7436 -142.438 74.9 -161.706 86.0643C-180.887 97.199 -201.219 106.221 -222.346 112.973C-232.93 116.227 -243.751 118.656 -254.712 120.235C-260.133 121.021 -265.718 121.509 -271.248 121.807C-273.958 121.807 -276.669 122.024 -279.542 122.051C-282.481 121.617 -285.479 122.241 -288 123.812C-285.575 125.566 -282.609 126.41 -279.624 126.197C-276.913 126.197 -273.958 126.197 -271.112 126.197C-265.419 126.061 -259.754 125.763 -254.116 125.167C-242.81 123.941 -231.617 121.839 -220.638 118.88C-198.733 112.816 -177.603 104.241 -157.667 93.3266C-137.851 82.4568 -118.731 70.3657 -100.416 57.1233C-91.1995 50.701 -82.1456 44.0077 -72.9562 38.1544C-63.7354 32.2673 -54.0217 27.19 -43.924 22.9794C-23.6728 14.5259 -2.09132 9.70103 19.8329 8.72566C41.7086 7.62862 63.5518 11.4531 83.7523 19.9173C103.984 28.5098 121.157 42.9953 133.034 61.4861C138.949 70.7517 143.572 80.78 146.777 91.2942C148.404 96.5813 149.735 101.955 150.762 107.391C151.223 110.1 151.738 112.81 152.063 115.52C152.253 116.875 152.47 118.23 152.578 119.639C152.615 120.442 152.82 121.228 153.179 121.947C153.539 122.666 154.045 123.301 154.666 123.812Z" fill="#6079BA"/>
+              <path d="M152.334 102.784C151.425 104.035 151.027 105.586 151.223 107.12C151.223 108.529 151.467 109.829 151.63 111.347C151.901 114.057 152.334 116.956 152.741 119.775C153.642 125.375 154.855 130.921 156.373 136.386C159.407 147.391 163.912 157.937 169.765 167.739C181.756 187.517 199.417 203.236 220.456 212.857C241.47 222.339 264.399 226.819 287.438 225.946C310.39 225.274 333.026 220.416 354.231 211.611C364.844 207.275 375.042 201.987 384.7 195.812C394.269 189.553 403.269 182.887 412.404 176.437C430.428 163.322 449.131 151.165 468.435 140.017C487.67 128.905 508.057 119.918 529.237 113.217C539.874 109.962 550.75 107.552 561.766 106.009C567.188 105.25 572.799 104.762 578.329 104.464C581.04 104.464 583.75 104.274 586.651 104.274C589.521 104.643 592.435 104.122 595 102.784C592.49 101.239 589.566 100.501 586.624 100.67C583.913 100.67 580.958 100.67 578.112 100.67C572.447 100.67 566.781 101.104 561.17 101.727C549.888 102.955 538.72 105.076 527.773 108.068C505.892 114.163 484.789 122.765 464.884 133.703C445.129 144.588 426.064 156.679 407.796 169.906C398.606 176.356 389.525 183.022 380.309 188.875C371.016 194.84 361.22 199.981 351.032 204.24C330.709 212.705 309.055 217.53 287.059 218.494C265.09 219.563 243.162 215.683 222.895 207.14C202.664 198.438 185.513 183.862 173.668 165.3C167.748 155.979 163.124 145.896 159.924 135.329C158.296 130.036 156.939 124.664 155.858 119.233C155.425 116.523 154.91 113.813 154.584 111.103C154.395 109.721 154.205 108.393 154.069 106.984C154.046 105.415 153.425 103.913 152.334 102.784Z" fill="#6079BA"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_1_20">
+                <rect width="883" height="226" fill="white" transform="matrix(-1 0 0 1 595 0)"/>
+              </clipPath>
+            </defs>
+        </svg>
+          <section id="logoSection">
+            <img src="./images/header-logo.png" alt="Лого и надпис 'Ателието на Ани'">
+            </h1>Подгъви  |  Преправяне на дрехи  |  Смяна на цип  |  Изработка на чанти<h1>
+              
 
-                </p>
-            </section>
-
-            <section id="reviewSection" aria-la>
-                <h2 class="sectionTitle">Отзиви от клиенти</h2>
-                
+          </section>
+          <section id="aboutSection">
+            <h2 class="sectionTitle">За ателието</h2>
+            <p class="sectionText">Здравейте! Аз съм Ани. Предлагам множество шивашки услуги, включително разширяване и свиване на дрехи, поставяне на копчета, смяна хастар джоб и много други. </p>
+            
+            <div>
+              <img src="" alt="Снимка на собственика - Анка Ангелова">
+              <img src="" alt="Снимка на ателието">
+            </div>
+            
+            <p>Освен това при мен можете да откриете уникални модели чанти, тъй като сама си ги създавам. При желание можете да си поръчате ушиване на чанта по поръчка.</p>
+            <p>Можете да ме откриете на адрес: <a href="">ж.к. Възраждане, ул. „Доростол“ 73, 7002 Русе</a></p>
+          </section>
+          <section id="reviewSection" aria-la>
+            <h2 class="sectionTitle">ОТЗИВИ ОТ КЛИЕНТИ</h2>
+            
 <article class="review">
   <footer>
     <address><a href='www.facebook.com'>Link to the review source</a></address>
@@ -143,99 +184,137 @@
         <p class="reviewText">Fast and professional service.</p>
     </div>
 </article>
+          </section>
+          <section id="priceListSection" aria-la>
+            <h2 class="sectionTitle">Ценоразпис</h2>
+            <p>Срок за изпълнение от 3 до 5 работни дни. За бърза поръчка в рамките на 24 часа, цената се повишава + 50%.</p>
+            <label for="priceList_1">Подгъвки</label>
+            <input type="checkbox" id="priceList_1" hidden checked>
+            <table>
+              <tr><td>Пола, Панталон </td> <td>10 лв / 5.11 евро </td></tr> 
+              <tr><td>Запазване на оригинален подгъв на дънки</td> <td>12 лв / 6.14 евро</td></tr> 
+              <tr><td>Пола с хастар</td><td>15 лв / 7.67 евро</td></tr>
+              <tr><td>Блуза</td><td>10 лв / 5.11 евро</td></tr>
+              <tr><td>Суитшър</td><td>14 лв / 7.16 евро</td></tr>
+              <tr><td>Сако с хастар, Яке</td><td>18 лв / 9.20 евро</td></tr>
+              <tr><td>Сако с хастар и цип</td><td>20 лв / 10.23 евро</td></tr>
+            </table>
+            <label for="priceList_2">Смяна цип</label>
+            <input type="checkbox" id="priceList_2" hidden >
+            <table>
+              <tr><td>Пола, Панталон</td><td>10 лв / 5.11 евро</td></tr>
+              <tr><td>Суитшър</td><td>18 лв / 9.20 евро</td></tr>
+              <tr><td>Дънки</td><td>12 лв / 6.14 евро</td></tr>
+              <tr><td>Пола с хастар</td><td>14 лв / 7.16 евро</td></tr>
+              <tr><td>Яке с хастар</td><td>24 лв / 12.27 евро</td></tr>
+              <tr><td>Палто, Шуба</td><td>28 лв / 14.32 евро</td></tr>
+              <tr><td>Джоб яке</td><td>12 лв / 6.14 евро</td></tr>
+            </table>
+            <label for="priceList_3">Скъсяване ръкави</label>
+            <input type="checkbox" id="priceList_3" hidden>
+            <table>
+              <tr><td>Блуза</td><td>10 лв / 5.11 евро</td></tr>
+              <tr><td>Риза с маншети</td><td>12 лв / 6.14 евро</td></tr>
+              <tr><td>Сако с хастар</td><td>14 лв / 7.16 евро</td></tr>
+              <tr><td>Сако с хастар и шлиц</td><td>16 лв / 8.18 евро</td></tr>
+            </table>
+            <label for="priceList_4">Стесняване / Отпускане</label>
+            <input type="checkbox" id="priceList_4" hidden>
+            <table>
+              <tr><td>Пола, Рокля</td><td>13 лв / 6.65 евро</td></tr>
+              <tr><td>Панталони странични</td><td></td></tr>
+              <tr><td>Шевове + колан</td><td>15 лв / 7.67 евро</td></tr>
+              <tr><td>Панталони вътрешни</td><td></td></tr>
+              <tr><td>Шевове + странични</td><td></td></tr>
+              <tr><td>Шевове + колан</td><td>20 лв / 10.23 евро</td></tr>
+              <tr><td>Риза, Блуза</td><td>15 лв / 7.67 евро</td></tr>
+              <tr><td>Сако, Яке с хастар</td><td>28 лв / 14.32 евро</td></tr>
+              <tr><td>Палто</td><td>30 лв / 15.32 евро</td></tr>
+            </table>
+            <label for="priceList_5">Други</label>
+            <input type="checkbox" id="priceList_5" hidden>
+            <table>
+              <tr><td>Смяна хастар джоб</td><td>6 лв / 3.07 евро</td></tr>
+              <tr><td>Реприз (кърпеж)</td><td>10 лв / 5.11 евро</td></tr>
+              <tr><td>Поставяне копче дънки</td><td>3.50 лв / 1.79 евро</td></tr>
+              <tr><td>Поставяне тик-так</td><td>3.50 лв / 1.79 евро</td></tr>
+              <tr><td>Пико л./м.</td><td>3 лв / 1.53 евро</td></tr>
+              <tr><td>Оверлог л./м.</td><td>3 лв / 1.53 евро</td></tr>
+              <tr><td>Прав шев л./м.</td><td>3 лв / 1.53 евро</td></tr>
+              <tr><td>Смяна плъзгач цип</td><td>3 лв / 1.53 евро</td></tr>
+              <tr><td>Перде 1/м.</td><td>7 лв / 3.58 евро</td></tr>
+            </table>
+          </section>
+          <section id="gallerySection">
+            <h2 class="sectionTitle">Изработка на чанти</h2>
+          </section>
+          <template id="galleryTemplate">
+            <div>
+                <img class="galleryImage" src="" alt="">
+                <h3 class="galleryText"></h3>
+            </div>
+          </template>
+          <section id="qnaSection">
+            <h2 class="sectionTitle">Често задавани въпроси</h2>
+            <input type="checkbox" id="qna_1" hidden>
+            <section>
+              <label for="qna_1">Какво е предимството на Вашите шивашки услуги пред конкуренти в сферата?</label>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae augue at neque pharetra varius vitae id augue. Proin nec sapien ac risus molestie accumsan. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut lacinia pharetra tellus, et porttitor turpis facilisis sit amet. Suspendisse congue felis orci, facilisis aliquam tellus ultricies et. </p>
             </section>
-
-            <template id="reviewTemplate">
-                <article class="review">
-                  <footer>
-                    <address><a href="">Link to the review source</a></address>
-                    <img class="userImage" src="" alt="Профилната снимка, в facebook, на потребителя, който е публикувал този коментар.">
-                    <h3 class="userName"></h3>
-                    <time class="reviewPublicationDate" datetime="2025-09-09">Sep 9, 2025</time>
-                  </footer>
-                    <div>
-                        <p class="reviewText"></p>
-                    </div>
-                </article>
-            </template>
-
-            <section id="priceListSection" aria-la>
-                <h2 class="sectionTitle">Ценоразпис</h2>
-
-            </section>
-
-            <section id="gallerySection">
-                <h2 class="sectionTitle">Галерия</h2>
-            </section>
-
-            <template id="galleryTemplate">
-                <div>
-                    <img class="galleryImage" src="" alt="">
-                    <h3 class="galleryText"></h3>
-                </div>
-            </template>
-
-            <section id="qnaSection">
-              <h2 class="sectionTitle">Често задавани въпроси</h2>
-             <!--Not yet sure how the qna will look, so its empty for now-->
-            </section>
-
-            <section id="contactsSection">
-              <h2 class="sectionTitle">Контакти</h2>
-              <div>
-                <div id="workTimeSection">
-                  <h3>Работно време:</h3>
-                  <ul>
-                    <li>
-                      <strong>Понеделник - Петък:</strong> 
-                      09:00 - 18:00 ч.
-                    </li>
-                    <li>
-                      <strong>Събота:</strong> 
-                      10:00 - 14:00 ч.
-                    </li>
-                    <li>
-                      <strong>Неделя:</strong> 
-                      Почивен ден
-                    </li>
-                    <li>
-                      <strong>Телефон за контакт:</strong> 
-                       324123425143
-                    </li>
-                    <li>
-                      <strong>E-mail:</strong> 
-                      test@test.com
-                    </li>
-                     <li>
-                      <strong>Адрес:</strong> 
-                      test асдваед
-                    </li>
-                  </ul>
-                </div>
-
-                <form>
-                  <label for="names">Име и Фамилия *</label>
-                  <input id="names" name="names" type="text" required>
-
-                  <label for="email">E-mail *</label>
-                  <input id="email" name="email" type="email" required>
-
-                  <label for="about">Относно *</label>
-                  <input id="about" name="about" type="text" required maxlength="25">
-
-                  <label for="message">Съобщение *</label>
-                  <textarea id="message" name="message" required minlength="10"></textarea>
-                                  
-                  <button type="submit">Изпрати</button>
-                </form>
+          </section>
+          <section id="contactsSection">
+            <h2 class="sectionTitle">Контакти</h2>
+            <div>
+              <div id="workTimeSection">
+                <h3>Работно време:</h3>
+                <ul>
+                  <li>
+                    <strong>Понеделник - Петък:</strong> 
+                    09:00 - 18:00 ч.
+                  </li>
+                  <li>
+                    <strong>Събота:</strong> 
+                    10:00 - 14:00 ч.
+                  </li>
+                  <li>
+                    <strong>Неделя:</strong> 
+                    Почивен ден
+                  </li>
+                  <li>
+                    <strong>Телефон за контакт:</strong> 
+                     324123425143
+                  </li>
+                  <li>
+                    <strong>E-mail:</strong> 
+                    test@test.com
+                  </li>
+                   <li>
+                    <strong>Адрес:</strong> 
+                    test асдваед
+                  </li>
+                </ul>
               </div>
-            </section>
-            <section id="map">
-              <figure>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d394.91324048673476!2d25.97356095234707!3d43.86000165541771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ae6778debbf029%3A0xf2f5f706b22573a0!2z0KjQuNCy0LDRiNC60Lgg0YPRgdC70YPQs9C4ICLQkNGC0LXQu9C40LXRgtC-INC90LAg0JDQvdC4Ig!5e1!3m2!1sbg!2sbg!4v1757491206477!5m2!1sbg!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <figcaption>Намерете ни на адрес "Русе кусе мусе"</figcaption>
-              </figure>
-            </section>
-        </main>
+              <form>
+                <label for="names">Име и Фамилия *</label>
+                <input id="names" name="names" type="text" required>
+                <label for="email">E-mail *</label>
+                <input id="email" name="email" type="email" required>
+                <label for="about">Относно *</label>
+                <input id="about" name="about" type="text" required maxlength="25">
+                <label for="message">Съобщение *</label>
+                <textarea id="message" name="message" required minlength="10"></textarea>
+                                
+                <button type="submit">Изпрати</button>
+              </form>
+            </div>
+          </section>
+          <section id="map">
+            <figure>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d394.91324048673476!2d25.97356095234707!3d43.86000165541771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ae6778debbf029%3A0xf2f5f706b22573a0!2z0KjQuNCy0LDRiNC60Lgg0YPRgdC70YPQs9C4ICLQkNGC0LXQu9C40LXRgtC-INC90LAg0JDQvdC4Ig!5e1!3m2!1sbg!2sbg!4v1757491206477!5m2!1sbg!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <figcaption>Намерете ни на адрес "Русе кусе мусе"</figcaption>
+            </figure>
+          </section>
+      </main>
+      </div>
     </body>
 </html>

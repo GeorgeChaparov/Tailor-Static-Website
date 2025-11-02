@@ -85,6 +85,7 @@ let html = fs.readFileSync('./src/index.html', 'utf-8');
 html = html.replace('<!-- REVIEW_SCHEMA_PLACEHOLDER -->', reviewSchemaHtml);
 html = html.replace('<!-- QnA_SCHEMA_PLACEHOLDER -->', qnaSchemaHtml);
 html = html.replace('<!-- REVIEWS_PLACEHOLDER -->', reviewsHtml);
+html = html.replace('../dist', ".");
 
 // Write final HTML
 fs.writeFileSync('./dist/index.html', html);

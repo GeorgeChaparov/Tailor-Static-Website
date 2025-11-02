@@ -1,21 +1,277 @@
+:root {
+    --link-font: 700 20px "El Messiri", sans-serif;
+    --header-font: 700 36px "El Messiri", sans-serif;
+    --link-color: #6079BA;
+    --main-color: #CBE3F4;
+}
+
+a {
+    text-decoration-line: none;
+    color: var(--link-color);
+}
+
 html, body {
     margin: 0;
     padding: 0;
 
-    background-color: black;
+    background: #F8F8F8;
+
     
     min-height: 100vh;
 
-    
+    text-align: center;
+    font-family: "Sofia Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    overflow-x: hidden;
+    text-indent: 30px;
 }
 
 .wrapper {
-    width: 1280px;
+    max-width: 1280px;
+    width: calc(100% - 66px);
     height: 100%;
 
+    padding: 0px 33px;
     background-color: white;
+}
+
+.main-sections-headers {
+    width: 720px;
+    height: 93px;
+
+    background-color: var(--main-color);
+    border-radius: 66px;
+
+    text-align: center;
+    align-content: center;
+    font: var(--header-font);
+}
+
+.sectionTitle {
+    color: #465A8E;
+}
+
+.main-section-title > div:first-of-type {
+    transform: translate(-50px, 60px);
+    z-index: 2;
+    position: absolute;
+}
+
+.main-section-title > h2 {
+    z-index: 1;
+    position: relative;
+}
+
+.main-section-title > div:last-of-type {
+    transform: translate(50px, -175px);
+    position: absolute;
+}
+
+#header {
+    width: calc(100% - 36px);
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font: var(--link-font);
+
+    margin-top: 62px;
+
+    background-color: white;
+
+    padding-right: 36px;
+
+}
+
+#header > nav:first-of-type {
+    width: 50%;
+    height: 100%;
+
+    text-align: center;
+    align-content: center;
+}
+
+#header > div {
+    width: 205px;
+    height: 50px;
+
+    align-content: center;
+
+    position: absolute;
+
+    left: calc(50% - 80px);
+    z-index: 1;
+
+    font-family: Sofia Sans;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#header > nav:last-of-type  {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header > nav:last-of-type > div:first-of-type  {
+    width: 145px;
+    height: 100%;
+}
+
+menu {
+    position: fixed;
+
+    top: 45px;
+    right: 36px;
+}
+
+#menu-input:checked + nav {
+    display: block;
+}
+
+#menu-input + nav {
+    position: absolute;
+    display: none;
+}
+
+#menu-placeholder {
+    width: 73px;
+    height: 45px;
+}
+
+#logoSection {
+    width: 100%;
+    height: calc(100vh - 250px);
+
+    padding-top: 180px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logoSection-SVG-line-one {
+    position: absolute;
+
+    top: 22px;
+    transform: translateX(-360px);
+}
+
+#logoSection  > h1 {
+    font-family: Sofia Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+}
+
+#logoSection  > img {
+    width: 583px;
+    height: 256px;
+
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+#logoSection > a {
+    font-weight: 700;
+
+    margin-bottom: 200px;
+}
+
+#logoSection-SVG-line-two {
+    position: absolute;
+
+    top: 670px;
+    transform: translateX(430px);
+}
+
+#logoSection > svg:last-of-type {
+    bottom: 50px;
+    position: absolute;
+}
+
+#aboutSection {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aboutSection > p {
+    max-width: 825px;
+    width: 100%;
+    height: fit-content;
+    text-align: justify;
+}
+
+#reviewSection {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#priceListSection {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gallerySection {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#qnaSection {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactsSection {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#workTimeSection {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
