@@ -69,7 +69,6 @@
               </g>
             </svg>
 
-
             <img  src="../dist/images/header-logo.png" alt="Лого и надпис 'Ателието на Ани'">
             <h1>Подгъви  |  Преправяне на дрехи  |  Смяна на цип  |  Изработка на чанти</h1>
             <a href="#priceListSection">Всички услуги</a>
@@ -121,16 +120,46 @@
             <p class="sectionText">Здравейте! Аз съм Ани. Предлагам множество шивашки услуги, включително разширяване и свиване на дрехи, поставяне на копчета, смяна хастар джоб и много други. </p>
 
             <div>
-              <img src="" alt="Снимка на собственика - Анка Ангелова">
-              <img src="" alt="Снимка на ателието">
+              <img src="../dist/images/meca.jpg" alt="Снимка на собственика - Анка Ангелова">
+              <img src="../dist/images/meca.jpg" alt="Снимка на ателието">
             </div>
             
-            <p>Освен това при мен можете да откриете уникални модели чанти, тъй като сама си ги създавам. При желание можете да си поръчате ушиване на чанта по поръчка.</p>
-            <p>Можете да ме откриете на адрес: <a href="">ж.к. Възраждане, ул. „Доростол“ 73, 7002 Русе</a></p>
+            <div>
+              <p>Освен това при мен можете да откриете уникални модели чанти, тъй като сама си ги създавам. При желание можете да си поръчате ушиване на чанта по поръчка.</p>
+              <pre>Можете да ме откриете на адрес:
+<a href="https://maps.app.goo.gl/hCfAQe4zL1WJXn1B9" target="_blank">ж.к. Възраждане, ул. „Доростол“ 73, 7002 Русе</a>
+              </pre>
+            </div>
+            
+
+            <svg width="74" height="64" viewBox="0 0 74 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 26.3901L36.6579 59.1379L69.3158 26.3901" stroke="#E3E3E3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M36.6579 13.1908C40.2895 13.1908 43.2335 10.2379 43.2335 6.59539C43.2335 2.95286 40.2895 0 36.6579 0C33.0263 0 30.0823 2.95286 30.0823 6.59539C30.0823 10.2379 33.0263 13.1908 36.6579 13.1908Z" fill="#E3E3E3"/>
+              <path d="M49.809 26.3901C53.4406 26.3901 56.3846 23.4372 56.3846 19.7947C56.3846 16.1521 53.4406 13.1993 49.809 13.1993C46.1774 13.1993 43.2335 16.1521 43.2335 19.7947C43.2335 23.4372 46.1774 26.3901 49.809 26.3901Z" fill="#E3E3E3"/>
+              <path d="M23.5067 26.3901C27.1383 26.3901 30.0823 23.4372 30.0823 19.7947C30.0823 16.1521 27.1383 13.1993 23.5067 13.1993C19.8751 13.1993 16.9312 16.1521 16.9312 19.7947C16.9312 23.4372 19.8751 26.3901 23.5067 26.3901Z" fill="#E3E3E3"/>
+              <path d="M36.6579 39.496C40.2895 39.496 43.2335 36.5431 43.2335 32.9006C43.2335 29.258 40.2895 26.3052 36.6579 26.3052C33.0263 26.3052 30.0823 29.258 30.0823 32.9006C30.0823 36.5431 33.0263 39.496 36.6579 39.496Z" fill="#E3E3E3"/>
+            </svg>
           </section>
 
           <section id="reviewSection" aria-la>
-            <h2 class="sectionTitle">ОТЗИВИ ОТ КЛИЕНТИ</h2>
+            <div class="sub-section-title">
+              <h2>ОТЗИВИ ОТ КЛИЕНТИ</h2>
+              <svg width="712" height="1" viewBox="0 0 712 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="0.5" x2="712" y2="0.5" stroke="#69696A"/>
+              </svg>
+            </div>
+
+            <article class="review">
+              <footer>
+                <address><a href='${review.link}'>Link to the review source</a></address>
+                <img class="userImage" src='./images/${index}' alt="Профилната снимка, в facebook, на потребителя, който е публикувал този коментар.">
+                <h3 class="userName">${review.author}</h3>
+                <time class="reviewPublicationDate" datetime=${review.date}>${review.date}</time>
+              </footer>
+                <div>
+                    <p class="reviewText">${review.text}</p>
+                </div>
+            </article>
             <!-- REVIEWS_PLACEHOLDER -->
           </section>
 
@@ -347,6 +376,13 @@
                     test асдваед
                   </li>
                 </ul>
+              </div>
+
+              <div class="sub-section-title">
+                <h3 class="sectionTitle">КОНТАКТНА ФОРМА</h3>
+                <svg width="712" height="1" viewBox="0 0 712 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line y1="0.5" x2="712" y2="0.5" stroke="#69696A"/>
+                </svg>
               </div>
               <form>
                 <label for="names">Име и Фамилия *</label>
